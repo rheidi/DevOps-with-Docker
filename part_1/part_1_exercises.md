@@ -112,8 +112,7 @@ CMD ["server"]
 
 ```console
 docker build . -t two-line
-➜  part 1 git:(main) ✗ docker run two-line
-WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+➜  part_1 git:(main) ✗ docker run two-line
 [GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
 
 [GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
@@ -124,3 +123,7 @@ WARNING: The requested image's platform (linux/amd64) does not match the detecte
 [GIN-debug] Listening and serving HTTP on :8080
 ```
 
+## 1.9 
+```console
+docker run -v "/Users/heidi/koodausta/DevOps-with-Docker/part_1:/usr/src/app/text.log" devopsdockeruh/simple-web-service:alpine
+```
