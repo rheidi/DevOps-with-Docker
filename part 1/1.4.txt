@@ -1,0 +1,18 @@
+# Exercise 1.4: Missing dependencies
+
+➜  ~ docker run -d --rm -it --name fourth ubuntu
+➜  ~ docker exec -it fourth bash
+root@01ddf21422c8:/# apt-get update
+root@01ddf21422c8:/# apt-get -y install curl
+root@01ddf21422c8:/# sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+Input website:
+helsinki.fi
+Searching..
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.22.1</center>
+</body>
+</html>
+Input website:
