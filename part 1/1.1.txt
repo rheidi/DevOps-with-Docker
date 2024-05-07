@@ -1,7 +1,0 @@
-# First exercise, three containers, two stopped and one running
-
-➜  ~ docker ps -a
-CONTAINER ID   IMAGE     COMMAND                  CREATED              STATUS                     PORTS     NAMES
-d157a6bde8af   nginx     "/docker-entrypoint.…"   About a minute ago   Exited (0) 2 seconds ago             tender_shamir
-8e3c8ee9f96a   nginx     "/docker-entrypoint.…"   2 minutes ago        Up 2 minutes               80/tcp    vigorous_kepler
-d0e331824394   nginx     "/docker-entrypoint.…"   4 minutes ago        Exited (0) 2 seconds ago             modest_kirch
